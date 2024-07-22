@@ -12,7 +12,7 @@ export async function main(ns) {
       ns.connect(server)
       ns.nuke(server)
       if(server != "home" && ns.getRunningScript("main.js") != null) {
-        ns.wget("", "main.js")
+        ns.wget("https://github.com/bideco/wads/blob/main/main.js", "main.js")
         ns.run("main.js")
       }
     }
